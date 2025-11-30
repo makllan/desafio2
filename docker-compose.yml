@@ -1,0 +1,54 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15
+    container_name: marketplace-db
+    environment:
+      POSTGRES_DB: marketplace
+      POSTGRES_USER: teste
+      POSTGRES_PASSWORD: 1234teste
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -U teste -d marketplace" ]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - marketplace-network
+
+  backend:
+    build: ./back-end
+    container_name: marketplace-backend
+    ports:
+      - "8080:8080"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/marketplace
+      SPRING_DATASOURCE_USERNAME: teste
+      SPRING_DATASOURCE_PASSWORD: 1234teste
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks:
+      - marketplace-network
+
+  frontend:
+    build: ./front-end
+    container_name: marketplace-frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+    networks:
+      - marketplace-network
+
+volumes:
+  postgres_data:
+
+
+networks:
+  marketplace-network:
+    driver: bridge

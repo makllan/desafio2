@@ -1,0 +1,14 @@
+C:\Users\makll\OneDrive\Documentos\Desafio\Projeto2\back-end\src\main\java\com\marketplace\entities\OrderItem.java
+C:\Users\makll\OneDrive\Documentos\Desafio\Projeto2\back-end\src\main\java\com\marketplace\exception\GlobalExceptionHandler.java
+C:\Users\makll\OneDrive\Documentos\Desafio\Projeto2\back-end\src\main\java\com\marketplace\dto\CartItemDTO.java
+C:\Users\makll\OneDrive\Documentos\Desafio\Projeto2\back-end\src\main\java\com\marketplace\controller\ProductController.java
+C:\Users\makll\OneDrive\Documentos\Desafio\Projeto2\back-end\src\main\java\com\marketplace\MarketplaceApplication.java
+C:\Users\makll\OneDrive\Documentos\Desafio\Projeto2\back-end\src\main\java\com\marketplace\service\OrderService.java
+C:\Users\makll\OneDrive\Documentos\Desafio\Projeto2\back-end\src\main\java\com\marketplace\entities\Order.java
+C:\Users\makll\OneDrive\Documentos\Desafio\Projeto2\back-end\src\main\java\com\marketplace\repository\OrderRepository.java
+C:\Users\makll\OneDrive\Documentos\Desafio\Projeto2\back-end\src\main\java\com\marketplace\repository\ProductRepository.java
+C:\Users\makll\OneDrive\Documentos\Desafio\Projeto2\back-end\src\main\java\com\marketplace\dto\CheckoutRequestDTO.java
+C:\Users\makll\OneDrive\Documentos\Desafio\Projeto2\back-end\src\main\java\com\marketplace\config\SwaggerConfig.java
+C:\Users\makll\OneDrive\Documentos\Desafio\Projeto2\back-end\src\main\java\com\marketplace\controller\CartController.java
+C:\Users\makll\OneDrive\Documentos\Desafio\Projeto2\back-end\src\main\java\com\marketplace\service\ProductService.java
+C:\Users\makll\OneDrive\Documentos\Desafio\Projeto2\back-end\src\main\java\com\marketplace\entities\Product.java
