@@ -35,6 +35,11 @@ docker-compose up --build
     - **Backend API**: http://localhost:8080
     - **Swagger UI**: http://localhost:8080/swagger-ui/index.html
 
+  Producao (Obs: o render tem um tempo de inatividade, pode ser que demore um pouco para carregar as informacoes e iniciar as APIs): 
+    - **Frontend**: https://desafio2-wyov.onrender.com/
+    - **Backend API**: https://back-end-q14j.onrender.com
+    - **Swagger UI**: https://back-end-q14j.onrender.com/swagger-ui/index.html
+
 ## Estrutura do Projeto
 
 - `back-end/`: Código fonte da API Spring Boot.
